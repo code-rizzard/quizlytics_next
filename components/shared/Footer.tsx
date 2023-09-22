@@ -21,7 +21,7 @@ const Footer = () => {
           className="flex flex-col gap-1 py-4 font-semibold text-onBg"
           >
             <Link href="/about" >About Us</Link>
-            <Link href="/#contact" >Contact Us</Link>
+            <Link href="/landing#contact" >Contact Us</Link>
             <Link href="/" >Privacy Policy</Link>
             <Link href="/" >Terms & Conditions</Link>
             <Link href="/" >Sitemap</Link>
