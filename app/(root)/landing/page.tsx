@@ -118,6 +118,7 @@ function WhatWeOfferSection() {
             {
             highlightsCircleImageInfo.map((val, index) => (
                 <Image
+                  key={`${val}-${index}`}
                   aria-hidden
                   style={{animationDelay: `${(index+1) * 0.15}s`}}
                   className={` highlight__circle absolute z-[-10] select-none  highlight__circle-anim translate-x-[-50%] translate-y-[50%] highlight__circle-${val}`}
