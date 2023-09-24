@@ -3,6 +3,7 @@ import '@/app/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Header from '@/components/shared/Header'
+import AuthProvider from '@/providers/next-auth'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,7 +26,9 @@ export default function RootLayout({
           <div
           className='flex-grow'
           >
-            {children}
+            <AuthProvider>
+              {children}
+            </AuthProvider>
           </div>
           <Footer/>
         </body>
